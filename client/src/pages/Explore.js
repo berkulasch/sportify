@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import pic1 from "../pictures/1.jpg";
 import pic2 from "../pictures/2.jpg";
-import pic3 from "../pictures/3.jpg";
 import pic4 from "../pictures/4.jpg";
 import pic5 from "../pictures/5.jpg";
-import pic6 from "../pictures/6.jpg";
+
 
 // Dummy data
 const mockVenues = [

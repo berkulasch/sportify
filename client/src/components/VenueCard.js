@@ -1,16 +1,16 @@
 import React from "react";
 
-// Optionally, pass `onBook` for "Book Now" (used on Home), or omit for Explore view.
+
 const VenueCard = ({ venue, onBook }) => {
-  // Save to recently viewed (up to 6 unique)
+  
   const handleCardClick = () => {
     const key = "recentlyViewedVenues";
     const existing = JSON.parse(localStorage.getItem(key) || "[]");
-    // Prevent duplicates
+
     const filtered = existing.filter(v => v.id !== venue.id);
     const updated = [{ ...venue }, ...filtered].slice(0, 6);
     localStorage.setItem(key, JSON.stringify(updated));
-    // Only call onBook if present (so works in both pages)
+
     if (onBook) onBook(venue);
   };
 

@@ -4,7 +4,7 @@ import pic1 from "../pictures/1.jpg";
 import pic5 from "../pictures/5.jpg";
 import pic6 from "../pictures/6.jpg";
 
-// Dummy bookings data — in real app, fetch from API or localStorage
+// Dummy data
 const mockBookings = [
   {
     id: 1,
